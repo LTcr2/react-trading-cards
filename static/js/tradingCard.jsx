@@ -4,7 +4,7 @@ class TradingCard extends React.Component {
 			<div className="card">
 				<h2>Name: {this.props.name}</h2>
 				<img src={this.props.imgUrl} />
-				<h2>Skill: </h2>
+				<h2>Skill: {this.props.skill}</h2>
 			</div>
 		);
 	}
@@ -23,4 +23,13 @@ ReactDOM.render(
 ReactDOM.render(
 	<TradingCard name="Llambda" skill="knitting scarves" imgUrl="/static/img/llambda.jpg" />,
 	document.getElementById('llambda')
+);
+
+ReactDOM.render(
+	<TradingCard name="Seedpy" skill="spitting seeds at all the haters" imgUrl="/static/img/seedpy.jpg" />, document.getElementById('seedpy')
+);
+
+ReactDOM.render(
+	<TradingCard name="Merge" skill="meowing at git merge" imgUrl="/static/img/merge.jpg" />,
+	document.getElementById('merge')
 );
